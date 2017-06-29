@@ -21,9 +21,12 @@ GameObject:
   - component: {fileID: 4280331336537276}
   - component: {fileID: 212027100431402514}
   - component: {fileID: 114375361842909362}
-  m_Layer: 0
+  - component: {fileID: 58236282756540440}
+  - component: {fileID: 114366183926840034}
+  - component: {fileID: 61047891818834400}
+  m_Layer: 9
   m_Name: Monster Spawner
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,12 +38,67 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1457464337147062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.71, y: -1.44, z: -10}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 52.63, y: -6.6, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58236282756540440
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457464337147062}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.25
+--- !u!61 &61047891818834400
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457464337147062}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.14}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.2}
+  m_EdgeRadius: 0
+--- !u!114 &114366183926840034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457464337147062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db04ffd4bed0384488629bd86aadf502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHP: 5
+  deathEffect: {fileID: 1743594302473768, guid: 5fdfa5b3ee2a5564ebf75525a9373510,
+    type: 2}
+  pointsOnDeath: 0
 --- !u!114 &114375361842909362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757ea88eeac6c824d97e62c9a1d3f715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 5
+  distance: 7
   target: mainCharacter
   projectile: {fileID: 1870351031747084, guid: 5688c33263a96204cadb956ca15a1167, type: 2}
 --- !u!212 &212027100431402514
@@ -86,7 +144,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4d34fcc7372dab844afc3d45c58b7932, type: 3}
   m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   m_FlipX: 0

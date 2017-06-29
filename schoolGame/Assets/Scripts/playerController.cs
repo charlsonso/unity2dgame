@@ -17,7 +17,6 @@ public class playerController : MonoBehaviour
     public Transform groundCheck;
     public float jumpHeight;
 
-    // Use this for initialization
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();

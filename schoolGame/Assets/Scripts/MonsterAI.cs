@@ -46,7 +46,6 @@ public class MonsterAI : MonoBehaviour {
             charRigidBody.AddForce(new Vector2(Xforce,Yforce ), ForceMode2D.Impulse);
         //}
         Destroy(gameObject,2);
-
         
     }
 

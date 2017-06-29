@@ -23,7 +23,6 @@ public class monster_spawner : MonoBehaviour {
         //if under distance, apply force
         if (howfar < distance)
         {
-
            
         }
     }
@@ -33,12 +32,6 @@ public class monster_spawner : MonoBehaviour {
         if (howfar < distance)
         {
             Instantiate(projectile, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-
         }
-
-       
-        
     }
-
-
 }

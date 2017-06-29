@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1870351031747084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.03, y: -1.06, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -107,11 +107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f845035cdc5d244986d5e1800b4df88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Xforce: -0.2
+  Xforce: -0.7
   Yforce: 0
   damage: 0
   target: mainCharacter
-  distance: 5
+  distance: 10
   life: 0
   onDeath: {fileID: 21300000, guid: 2820950c4757aa14d82712823d8da75c, type: 3}
 --- !u!212 &212909401544051732
