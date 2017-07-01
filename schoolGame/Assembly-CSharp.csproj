@@ -46,14 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
-     <Compile Include="Assets\Scripts\HurtEnemyOnContact.cs" />
-     <Compile Include="Assets\Scripts\MonsterAI.cs" />
-     <Compile Include="Assets\Scripts\ZombieMovement.cs" />
-     <Compile Include="Assets\Scripts\cameraFollower.cs" />
-     <Compile Include="Assets\Scripts\monster_spawner.cs" />
-     <Compile Include="Assets\Scripts\playerController.cs" />
-     <Compile Include="Assets\Scripts\zombieMovementController.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\PencilShooterScripts\MonsterAI.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\PencilShooterScripts\monster_spawner.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\SharedEnemyScripts\DestroyBloodSplatter.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\SharedEnemyScripts\EnemyHealthManager.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\SharedEnemyScripts\HurtEnemyOnContact.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\ZombieScripts\ZombieMovement.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\ZombieScripts\zombieMovementController.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\cameraFollower.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\TextScripts\ActivateText.cs" />
+     <Compile Include="Assets\Scripts\TextScripts\FlashingText.cs" />
+     <Compile Include="Assets\Scripts\TextScripts\TextBoxManager.cs" />
+     <None Include="Assets\text.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
