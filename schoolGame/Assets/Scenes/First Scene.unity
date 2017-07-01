@@ -292,7 +292,7 @@ Prefab:
         type: 2}
       propertyPath: deathEffect
       value: 
-      objectReference: {fileID: 1743594302473768, guid: 5fdfa5b3ee2a5564ebf75525a9373510,
+      objectReference: {fileID: 1920287589434816, guid: 4249a8efccf6977429e080e2025dd2b7,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82b59c96dfb367841a9319df4d6cbbbc, type: 2}
@@ -546,6 +546,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114355386397145924, guid: 43be4367d312c5144a1961598ca7dceb,
+        type: 2}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1920287589434816, guid: 4249a8efccf6977429e080e2025dd2b7,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43be4367d312c5144a1961598ca7dceb, type: 2}
   m_IsPrefabParent: 0
@@ -657,8 +663,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -90.100006, y: 65.8}
-  m_SizeDelta: {x: -194.5, y: -153.3}
+  m_AnchoredPosition: {x: -29, y: 32}
+  m_SizeDelta: {x: -72.4, y: -85.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &973888418
 MonoBehaviour:
@@ -902,6 +908,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114101715207356558, guid: 1355968352b738f46942e5f97d5278aa,
+        type: 2}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1920287589434816, guid: 4249a8efccf6977429e080e2025dd2b7,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1355968352b738f46942e5f97d5278aa, type: 2}
   m_IsPrefabParent: 0
@@ -1017,6 +1029,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114366183926840034, guid: 82b59c96dfb367841a9319df4d6cbbbc,
+        type: 2}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1920287589434816, guid: 4249a8efccf6977429e080e2025dd2b7,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82b59c96dfb367841a9319df4d6cbbbc, type: 2}
   m_IsPrefabParent: 0
