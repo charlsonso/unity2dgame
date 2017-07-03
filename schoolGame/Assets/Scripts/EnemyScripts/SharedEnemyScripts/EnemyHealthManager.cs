@@ -6,7 +6,6 @@ public class EnemyHealthManager : MonoBehaviour {
     public int enemyHP;
     public GameObject deathEffect;
     public int pointsOnDeath;
-    public SpriteRenderer sr;
 
 	// Use this for initialization
 	void Start () {
