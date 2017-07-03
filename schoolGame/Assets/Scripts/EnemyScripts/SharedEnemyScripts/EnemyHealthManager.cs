@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class EnemyHealthManager : MonoBehaviour {
     public int enemyHP;
-    public Sprite deathEffect;
+    public GameObject deathEffect;
     public int pointsOnDeath;
-    SpriteRenderer sr;  //access sprite renderer
-                        // Use this for initialization
-    void Start () {
-        sr = GetComponent<SpriteRenderer>();
-    }
+
+	// Use this for initialization
+	void Start () {
+		
+	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(enemyHP <= 0)
         {
-           if (gameObject != null)
-          {
-                sr.sprite = deathEffect;
-                Destroy(gameObject, 1);
+            if (gameObject != null)
+            {
+                Instantiate(deathEffect, transform.position, transform.rotation);
+                Destroy(gameObject);
             }
         }
 	}

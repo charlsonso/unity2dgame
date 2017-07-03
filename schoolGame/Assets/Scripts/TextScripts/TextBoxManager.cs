@@ -14,8 +14,10 @@ public class TextBoxManager : MonoBehaviour {
     void Start () {
         if (textFile != null)
             textLines = textFile.text.Split('\n');
-       if(endLine == 0)
-            endLine = textLines.Length - 1;
+        if(endLine == 0)
+        {
+            endLine = textLines.Length;
+        }
         if (isActive)
             enableTextBox();
         if (!isActive)
@@ -24,6 +26,7 @@ public class TextBoxManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        endLine = textLines.Length-1;
         if (currentLine > endLine)
         {
             disableTextBox();
