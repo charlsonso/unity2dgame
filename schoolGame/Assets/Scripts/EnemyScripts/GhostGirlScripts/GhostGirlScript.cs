@@ -9,7 +9,6 @@ public class GhostGirlScript : MonoBehaviour
     public int damageToGive;
     float myWidth;
 
-    Animator enemyAnimator;
     Rigidbody2D myBody;
     Transform myTransform;
 
@@ -19,9 +18,6 @@ public class GhostGirlScript : MonoBehaviour
         myTransform = this.transform;
         myBody = this.GetComponent<Rigidbody2D>();
         myWidth = this.GetComponent<SpriteRenderer>().bounds.extents.x;
-        enemyAnimator = GetComponentInChildren<Animator>();
-        enemyAnimator.SetBool("isCharging", true); //set enemy to constantly charge
-
     }
 
     void FixedUpdate()
