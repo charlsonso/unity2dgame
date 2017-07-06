@@ -18,7 +18,8 @@ public class playerController : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float jumpHeight;
-
+    //health varibles
+    int health;
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
@@ -69,4 +70,96 @@ public class playerController : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
+//Take damage function
+public void Damage(int dmg)
+{
+    health -= dmg;
+
+    //playerAnimation when you take damage
+    //gameObject.GetComponent<>().Play("Player_Damage_Animation");
+}
+
+//Top Knockback Function
+public IEnumerator Knockback(float knockbackDuration, float knockbackPower, Vector3 knockbackDirection)
+{
+
+    //current time
+    float timer = 0;
+
+    //while loop with the conditon where the 
+    //IEnumator is used
+    while (knockbackDuration > timer)
+    {
+
+        //increments the time
+        timer += Time.deltaTime;
+
+            //RigidBody is knocked back using a force in a x and y direction
+            //z is not changed
+            myRB.velocity = new Vector2(myRB.velocity.x, 10);
+
+        //myRB.AddForce(new Vector3(/*knockbackDirection.x * -100*/ 0*myRB.position.x,
+         //   /*knockbackDirection.y * knockbackPower*/ 1.5f * myRB.position.y, transform.position.z));
+
+    }
+
+    //returns the knockback force
+    yield return 0;
+
+}
+
+//Left Knockback Function
+public IEnumerator KnockbackLeft(float knockbackDuration, float knockbackPower, Vector3 knockbackDirection)
+{
+
+    //current time
+    float timer = 0;
+
+    //while loop with the conditon where the 
+    //IEnumator is used
+    while (knockbackDuration > timer)
+    {
+
+        //increments the time
+        timer += Time.deltaTime;
+
+            //RigidBody is knocked back using a force in a x and y direction
+            //z is not changed
+
+             myRB.AddForce(new Vector3(knockbackDirection.x * -30,
+                knockbackDirection.y * knockbackPower, transform.position.z));
+
+        }
+
+        //returns the knockback force
+        yield return 0;
+
+}
+
+//Right Knockback Function
+public IEnumerator KnockbackRight(float knockbackDuration, float knockbackPower, Vector3 knockbackDirection)
+{
+
+    //current time
+    float timer = 0;
+
+    //while loop with the conditon where the 
+    //IEnumator is used
+    while (knockbackDuration > timer)
+    {
+
+        //increments the time
+        timer += Time.deltaTime;
+
+        //RigidBody is knocked back using a force in a x and y direction
+        //z is not changed
+        myRB.AddForce(new Vector3(knockbackDirection.x * 35,
+            knockbackDirection.y * knockbackPower,transform.position.z));
+
+    }
+
+    //returns the knockback force
+    yield return 0;
+
+}
 }

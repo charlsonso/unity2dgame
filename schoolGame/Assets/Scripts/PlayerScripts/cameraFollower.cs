@@ -26,7 +26,7 @@ public class cameraFollower : MonoBehaviour {
 		Vector3 targetCamPos = target.position + offset;
 		//lerp lets us switch from one position to the next
 		//lerp will slow down based off smoothing
-		//Time.deltaTime is the difference between the last frame
+		//Time.dzeltaTime is the difference between the last frame
 		//ctrl+' for help on functions
 		transform.position = Vector3.Lerp(transform.position,targetCamPos, smoothing*Time.deltaTime);
 
