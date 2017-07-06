@@ -11,7 +11,9 @@ public class playerController : MonoBehaviour
     Animator myAnimator;
 
     //jumping variables
-    bool grounded = false;
+    [HideInInspector]
+    public bool grounded = false;
+
     float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
     public Transform groundCheck;

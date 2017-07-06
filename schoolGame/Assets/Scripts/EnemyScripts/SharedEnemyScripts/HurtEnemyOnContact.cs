@@ -19,6 +19,7 @@ public class HurtEnemyOnContact : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("TRiggered");
         if (other.gameObject.tag == "Enemy")
         {
             other.gameObject.GetComponent<EnemyHealthManager>().giveDamage(damageToGive);
