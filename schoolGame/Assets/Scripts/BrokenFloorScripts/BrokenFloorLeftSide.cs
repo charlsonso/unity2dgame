@@ -35,7 +35,7 @@ public class BrokenFloorLeftSide : MonoBehaviour
         //the player object
         Debug.Log("left");
 
-        StartCoroutine(player1.KnockbackLeft(0.1f, 1, player1.transform.position));
+        StartCoroutine(player1.KnockbackLeft(0.1f, 0f, player1.transform.position));
     }
     // 
 

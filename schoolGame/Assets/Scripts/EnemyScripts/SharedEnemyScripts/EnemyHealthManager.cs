@@ -20,6 +20,10 @@ public class EnemyHealthManager : MonoBehaviour {
             {
                 Instantiate(deathEffect, transform.position, transform.rotation);
                 Destroy(gameObject);
+               // if(transform.parent.gameObject != null) //if the gameobject is a child; it will destroy the parent as well
+               // {
+                //    Destroy(transform.parent.gameObject);
+               // }
             }
         }
 	}

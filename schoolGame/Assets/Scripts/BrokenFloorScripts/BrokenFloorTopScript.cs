@@ -32,7 +32,6 @@ public class BrokenFloorTopScript : MonoBehaviour {
         //Takes the values for the knockback fucntion to
         //the player object
         Debug.Log("top");
-       // player1.velocity = new Vector2(playerRB.velocity.x, bounce);
 
         StartCoroutine(player1.Knockback(1f, .5f, player1.transform.position));
     }

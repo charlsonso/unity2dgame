@@ -96,7 +96,7 @@ public IEnumerator Knockback(float knockbackDuration, float knockbackPower, Vect
 
             //RigidBody is knocked back using a force in a x and y direction
             //z is not changed
-            myRB.velocity = new Vector2(myRB.velocity.x, 10);
+            myRB.velocity = new Vector2(myRB.velocity.x, 15);
 
         //myRB.AddForce(new Vector3(/*knockbackDirection.x * -100*/ 0*myRB.position.x,
          //   /*knockbackDirection.y * knockbackPower*/ 1.5f * myRB.position.y, transform.position.z));
@@ -119,18 +119,15 @@ public IEnumerator KnockbackLeft(float knockbackDuration, float knockbackPower, 
     //IEnumator is used
     while (knockbackDuration > timer)
     {
-
         //increments the time
         timer += Time.deltaTime;
 
             //RigidBody is knocked back using a force in a x and y direction
             //z is not changed
-
-             myRB.AddForce(new Vector3(knockbackDirection.x * -30,
-                knockbackDirection.y * knockbackPower, transform.position.z));
-
+            Debug.Log(myRB.position.x);
+            if (myRB.position.x <= 0f) myRB.AddForce(new Vector3(knockbackDirection.x * 30, knockbackDirection.y * knockbackPower, transform.position.z));
+             else if (myRB.position.x >= 0f)  myRB.AddForce(new Vector3(knockbackDirection.x * -30, knockbackDirection.y * knockbackPower, transform.position.z));
         }
-
         //returns the knockback force
         yield return 0;
 
@@ -147,19 +144,20 @@ public IEnumerator KnockbackRight(float knockbackDuration, float knockbackPower,
     //IEnumator is used
     while (knockbackDuration > timer)
     {
-
         //increments the time
         timer += Time.deltaTime;
+            //RigidBody is knocked back using a force in a x and y direction
+            //z is not changed
+            //fix 
+            Debug.Log(myRB.position.x + " right");
 
-        //RigidBody is knocked back using a force in a x and y direction
-        //z is not changed
-        myRB.AddForce(new Vector3(knockbackDirection.x * 35,
-            knockbackDirection.y * knockbackPower,transform.position.z));
+            if (myRB.position.x <= 0f) myRB.AddForce(new Vector3(knockbackDirection.x * -30, knockbackDirection.y * knockbackPower,transform.position.z));
+         if (myRB.position.x >= 0f) myRB.AddForce(new Vector3(knockbackDirection.x * -30, knockbackDirection.y * knockbackPower, transform.position.z));
 
-    }
+        }
 
-    //returns the knockback force
-    yield return 0;
+        //returns the knockback force
+        yield return 0;
 
 }
 }

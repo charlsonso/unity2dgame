@@ -35,7 +35,7 @@ public class BrokenFloorRightSide : MonoBehaviour
         //Takes the values for the knockback fucntion to
         //the player object
         Debug.Log("Rght");
-        StartCoroutine(player1.KnockbackRight(0.3f, 15, player1.transform.position));
+        StartCoroutine(player1.KnockbackRight(0.1f, .1f, player1.transform.position));
     }
     // 
 
