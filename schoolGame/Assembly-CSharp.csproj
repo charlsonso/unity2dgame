@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\EnemyScripts\FallingEnemyScript\fallingEnemy.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\GhostGirlScripts\GhostGirlScript.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\PencilShooterScripts\MonsterAI.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\PencilShooterScripts\monster_spawner.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\SharedEnemyScripts\DestroyBloodSplatter.cs" />
@@ -54,11 +55,15 @@
      <Compile Include="Assets\Scripts\EnemyScripts\SharedEnemyScripts\HurtEnemyOnContact.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\ZombieScripts\ZombieMovement.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\ZombieScripts\zombieMovementController.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\enemyDamage.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\cameraFollower.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\mainCharacterHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\playerController.cs" />
      <Compile Include="Assets\Scripts\TextScripts\ActivateText.cs" />
      <Compile Include="Assets\Scripts\TextScripts\FlashingText.cs" />
      <Compile Include="Assets\Scripts\TextScripts\TextBoxManager.cs" />
+     <Compile Include="Assets\Scripts\Universalscripts\platformScript.cs" />
+     <Compile Include="Assets\Scripts\Universalscripts\stayOnPlatform.cs" />
      <None Include="Assets\text.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
