@@ -86,7 +86,6 @@
 -define:UNITY_TEAM_LICENSE
 'Assets/Scripts/EnemyScripts/FallingEnemyScript/fallingEnemy.cs'
 'Assets/Scripts/EnemyScripts/GhostGirlScripts/GhostGirlScript.cs'
-'Assets/Scripts/EnemyScripts/MainCharacterScript/MainCharacterHealth.cs'
 'Assets/Scripts/EnemyScripts/PencilShooterScripts/MonsterAI.cs'
 'Assets/Scripts/EnemyScripts/PencilShooterScripts/monster_spawner.cs'
 'Assets/Scripts/EnemyScripts/SharedEnemyScripts/DestroyBloodSplatter.cs'
@@ -94,7 +93,9 @@
 'Assets/Scripts/EnemyScripts/SharedEnemyScripts/HurtEnemyOnContact.cs'
 'Assets/Scripts/EnemyScripts/ZombieScripts/ZombieMovement.cs'
 'Assets/Scripts/EnemyScripts/ZombieScripts/zombieMovementController.cs'
+'Assets/Scripts/EnemyScripts/enemyDamage.cs'
 'Assets/Scripts/PlayerScripts/cameraFollower.cs'
+'Assets/Scripts/PlayerScripts/mainCharacterHealth.cs'
 'Assets/Scripts/PlayerScripts/playerController.cs'
 'Assets/Scripts/TextScripts/ActivateText.cs'
 'Assets/Scripts/TextScripts/FlashingText.cs'

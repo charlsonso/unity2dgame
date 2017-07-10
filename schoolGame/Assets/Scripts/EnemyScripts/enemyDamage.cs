@@ -7,12 +7,14 @@ public class enemyDamage : MonoBehaviour {
 	//how often enemy can do damage
 	public float damageRate;
 	public float pushBackForce;
+	//fallingEnemy fE;
 	//when damage occurs next
 	float nextDamage;
 	// Use this for initialization
 	void Start () {
 		//character can be damaged immediately
 		nextDamage = 0f;
+		//fE = GetComponent<fallingEnemy> ();
 
 	}
 	

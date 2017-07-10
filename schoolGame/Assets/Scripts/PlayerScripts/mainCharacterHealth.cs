@@ -14,14 +14,12 @@ public class mainCharacterHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 
 	//remove health
 	public void removeHealth(float damage){
 		//enemies can do no damage but affect character
 		if (damage <= 0) {
-			return;
 		}
 		currentHealth -= damage;
 		//kill character if no more health
