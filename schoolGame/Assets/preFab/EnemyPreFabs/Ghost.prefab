@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 70664078666793120}
   - component: {fileID: 114335497644980084}
   - component: {fileID: 114714688993606290}
+  - component: {fileID: 114076115300343236}
   m_Layer: 9
   m_Name: Ghost
   m_TagString: Enemy
@@ -91,7 +92,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.63, y: -2.12}
@@ -116,10 +117,10 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.74, y: 2.37}
+  m_Offset: {x: -0.74, y: 7.15}
   m_Size: {x: 2.46, y: 2.68}
   m_Direction: 0
 --- !u!95 &95719811124026058
@@ -139,6 +140,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114076115300343236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334527500495768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c913491c0524de1b43380cf06d4d8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  damageRate: 0.5
+  pushBackForce: 20
 --- !u!114 &114335497644980084
 MonoBehaviour:
   m_ObjectHideFlags: 1

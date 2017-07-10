@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 58562662188347572}
   - component: {fileID: 114970770472619354}
   - component: {fileID: 114062259098272532}
-  - component: {fileID: 114919482908544594}
+  - component: {fileID: 114893444489798508}
   m_Layer: 0
   m_Name: mainCharacter
   m_TagString: Player
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToGive: 5
   bounce: 10
---- !u!114 &114919482908544594
+--- !u!114 &114893444489798508
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2584cfcd2944e33887e6cf33b095dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 1
 --- !u!114 &114970770472619354
 MonoBehaviour:
   m_ObjectHideFlags: 1

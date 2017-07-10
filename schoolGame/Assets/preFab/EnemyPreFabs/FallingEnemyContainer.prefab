@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 61108194045886936}
   - component: {fileID: 50366964772698930}
   - component: {fileID: 114596680428515258}
+  - component: {fileID: 61856037671071036}
+  - component: {fileID: 114928056786304430}
   m_Layer: 0
   m_Name: fallingEnemy
   m_TagString: Enemy
@@ -97,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1627886749462636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.95, y: 2.96, z: 0}
+  m_LocalPosition: {x: -28.71491, y: 1.2354302, z: 0}
   m_LocalScale: {x: 2.9586196, y: 3.642157, z: 1}
   m_Children:
   - {fileID: 4029587947250472}
@@ -227,6 +229,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2922454, y: 0.50644493}
   m_EdgeRadius: 0
+--- !u!61 &61856037671071036
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1120046708045442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000047683716, y: -1.0646768}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2.24}
+    newSize: {x: 2, y: 2.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.869865, y: 0.17105389}
+  m_EdgeRadius: 0
 --- !u!114 &114596680428515258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,6 +267,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rise: 0
   timer: 1
+--- !u!114 &114928056786304430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1120046708045442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c913491c0524de1b43380cf06d4d8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  damageRate: 1
+  pushBackForce: 1
 --- !u!212 &212738577775483412
 SpriteRenderer:
   m_ObjectHideFlags: 1
