@@ -1,0 +1,4 @@
+On your journey
+you may encounter objects that
+you may need to jump over...
+Press space to jump!
