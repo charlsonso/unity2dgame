@@ -62,6 +62,14 @@ public class playerController : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Pickup"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
+
     void flip()
     {
         facingRight = !facingRight;
