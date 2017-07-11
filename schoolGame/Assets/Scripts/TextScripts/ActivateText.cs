@@ -14,7 +14,7 @@ public class ActivateText : MonoBehaviour {
     // Use this for initialization
     void Start () {
         textBox = FindObjectOfType<TextBoxManager>();
-        StartCoroutine(DestroyObjectAfter15Seconds(secondsToDestroy));
+       // StartCoroutine(DestroyObjectAfter15Seconds(secondsToDestroy));
     }
 	
 	// Update is called once per frame
@@ -39,11 +39,11 @@ public class ActivateText : MonoBehaviour {
             textBox.disableTextBox();
     }
 
-    public IEnumerator DestroyObjectAfter15Seconds(int secondsUntilObjectIsDestroyed)
+   /* public IEnumerator DestroyObjectAfter15Seconds(int secondsUntilObjectIsDestroyed)//disabled so player can reaccess tutorial
     {
         Debug.Log("Enter");
         yield return new WaitForSeconds(secondsUntilObjectIsDestroyed);
         if (destroyWhenActivated)
             Destroy(gameObject);
-    }
+    }*/
 }
