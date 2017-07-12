@@ -1,9 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:schoolGame/Assets/Sprites/2DExplorer_4.controller.meta
 guid: d21510d9af429394587222f568e320b1
 timeCreated: 1499040400
+=======
+guid: f59571f0ea37b004e9a3279a5b7c6002
+timeCreated: 1499797366
+>>>>>>> master:schoolGame/Assets/Animation/mainCharacter.controller.meta
 licenseType: Free
 NativeFormatImporter:
-  mainObjectFileID: 9100000
+  mainObjectFileID: -1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

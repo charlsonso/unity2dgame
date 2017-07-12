@@ -90,13 +90,14 @@ public class zombieMovementController : MonoBehaviour {
         {
             if (facingRight)
             {
-                if (player.position.x <= 0f) player.AddForce(new Vector2(-player.position.x * Xforce * 10, player.position.y));
-                else player.AddForce(new Vector2(player.position.x * Xforce * 10, player.position.y));
+                // Mathf.Pow(enemyRB.position.x - player.position.x, 2f) + Mathf.Pow(enemyRB.position.y - player.position.y, 2f);
+                if (player.position.x <= 0f) player.AddForce(new Vector2(-player.position.x * Xforce, player.position.y));
+                else player.AddForce(new Vector2(player.position.x * Xforce, player.position.y));
             }
             else if(!facingRight)
             { 
-                if (player.position.x <= 0f) player.AddForce(new Vector2(player.position.x * Xforce * 10, player.position.y));
-                else player.AddForce(new Vector2(-player.position.x * Xforce * 10, player.position.y));
+                if (player.position.x <= 0f) player.AddForce(new Vector2(player.position.x * Xforce, player.position.y));
+                else player.AddForce(new Vector2(-player.position.x * Xforce, player.position.y));
             }
 
         }

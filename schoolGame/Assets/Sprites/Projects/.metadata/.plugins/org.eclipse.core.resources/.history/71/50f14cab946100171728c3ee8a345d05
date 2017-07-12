@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.Collections;
+
+public class ConcatenatingIntegers {
+
+	public static void main(String[] args) {
+		combineIntegers("5 56 50");
+	}
+	
+	public static void combineIntegers(String str) {
+		String values[] = str.split(" ");
+		Arrays.sort(values);
+		
+		System.out.print("Largest output: ");
+		for(int i = values.length-1; i >= 0; --i) {
+			System.out.print(values[i]);
+		}
+		
+		System.out.print("\nLargest output: ");
+
+		
+	}
+
+}

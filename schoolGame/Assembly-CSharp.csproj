@@ -50,7 +50,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BrokenFloorScripts\BrokenFloorLeftSide.cs" />
+     <Compile Include="Assets\Scripts\BrokenFloorScripts\BrokenFloorRightSide.cs" />
+     <Compile Include="Assets\Scripts\BrokenFloorScripts\BrokenFloorTopScript.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\FallingEnemyScript\fallingEnemy.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\GhostGirlScripts\GhostGirlScript.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\PencilShooterScripts\MonsterAI.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\PencilShooterScripts\monster_spawner.cs" />
      <Compile Include="Assets\Scripts\EnemyScripts\SharedEnemyScripts\DestroyBloodSplatter.cs" />
@@ -62,10 +66,24 @@
      <Compile Include="Assets\Scripts\MenuScript\MenuManager.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\cameraFollower.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\Sound_on_player_collision.cs" />
      <Compile Include="Assets\Scripts\TextScripts\ActivateText.cs" />
      <Compile Include="Assets\Scripts\TextScripts\FlashingText.cs" />
      <Compile Include="Assets\Scripts\TextScripts\TextBoxManager.cs" />
+     <Compile Include="Assets\Scripts\Universalscripts\platformScript.cs" />
+     <Compile Include="Assets\Scripts\Universalscripts\stayOnPlatform.cs" />
+     <Compile Include="Assets\Scripts\enemyDamage.cs" />
+     <Compile Include="Assets\Scripts\mainCharacterHealth.cs" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\PlatformTutorial.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\LeftrightTutorial.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\EnemyTutorial.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\End of tutorial.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\text.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\Jumptutorial.txt" />
      <None Include="Assets\text.txt" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>/Users/charlsonso/Programs/unity/unity2dgame/schoolGame/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>

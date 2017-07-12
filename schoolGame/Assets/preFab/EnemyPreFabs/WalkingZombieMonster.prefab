@@ -22,10 +22,10 @@ GameObject:
   - component: {fileID: 212048499472963192}
   - component: {fileID: 50790072663645104}
   - component: {fileID: 58808981172837954}
-  - component: {fileID: 114593510615388412}
-  - component: {fileID: 114355386397145924}
   - component: {fileID: 95747308982340894}
   - component: {fileID: 58811700135444516}
+  - component: {fileID: 114212207318188322}
+  - component: {fileID: 114306173682623870}
   m_Layer: 9
   m_Name: WalkingZombieMonster
   m_TagString: Enemy
@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1143352813753526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.55, y: -4.62, z: -2}
+  m_LocalPosition: {x: 56.7, y: 11.965018, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,7 +113,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114355386397145924
+--- !u!114 &114212207318188322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143352813753526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6746e2296b7aa9d448343460c32bc311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 256
+  enemySpeed: 5
+  damageToGive: 0
+--- !u!114 &114306173682623870
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -125,25 +141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHP: 5
-  deathEffect: {fileID: 1743594302473768, guid: 5fdfa5b3ee2a5564ebf75525a9373510,
+  deathEffect: {fileID: 1920287589434816, guid: 4249a8efccf6977429e080e2025dd2b7,
     type: 2}
   pointsOnDeath: 0
---- !u!114 &114593510615388412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1143352813753526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7043cb316d3cf74292479ab5cb51eef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 256
-  enemySpeed: 3.2
-  damageToGive: 0
 --- !u!212 &212048499472963192
 SpriteRenderer:
   m_ObjectHideFlags: 1

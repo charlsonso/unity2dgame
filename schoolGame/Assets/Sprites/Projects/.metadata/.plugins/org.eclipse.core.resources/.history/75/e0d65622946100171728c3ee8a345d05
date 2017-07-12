@@ -1,0 +1,17 @@
+
+public class ConcatenatingIntegers {
+
+	public static void main(String[] args) {
+
+	}
+	
+	public void combineIntegers(String str) {
+		String values[] = str.split(" ");
+		
+		for(int i = 0; i < values.length; ++i) {
+			
+		}
+		
+	}
+
+}
