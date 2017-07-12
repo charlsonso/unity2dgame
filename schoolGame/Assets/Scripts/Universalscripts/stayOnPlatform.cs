@@ -19,8 +19,7 @@ public class stayOnPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(movementSpeedY);
-        print(onPlatform);
+       
 
         if (onPlatform == true)
         {
@@ -41,7 +40,7 @@ public class stayOnPlatform : MonoBehaviour
         }
     }
 
-
+    //makes a character stay on a moving platform by granting that character the same transform
     private void OnCollisionEnter2D(Collision2D coll)
     {
        
@@ -50,15 +49,7 @@ public class stayOnPlatform : MonoBehaviour
             platform = coll.gameObject;
             transplat = platform.transform;
             onplatform(transplat);
-           /* movementSpeedX = platform.gameObject.GetComponent<platformScript>().movementSpeedX;
-            movementSpeedY = platform.gameObject.GetComponent<platformScript>().movementSpeedY;
-
-            transform.Translate(movementSpeedX / 10, movementSpeedY / 10, 0);
-            onPlatform = true;
-            print(onPlatform);
-
-            print(movementSpeedY);
-            */
+         
         }
         else
         {
@@ -67,6 +58,8 @@ public class stayOnPlatform : MonoBehaviour
 
         }
     }
+
+    //on leaving the platform removes that transform
     private void OnCollisionExit2D(Collision2D collis)
     {
         onPlatform = false;

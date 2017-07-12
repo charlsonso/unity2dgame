@@ -60,17 +60,35 @@
      <Compile Include="Assets\Scripts\EnemyScripts\ZombieScripts\zombieMovementController.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\cameraFollower.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\Sound_on_player_collision.cs" />
      <Compile Include="Assets\Scripts\TextScripts\ActivateText.cs" />
      <Compile Include="Assets\Scripts\TextScripts\FlashingText.cs" />
      <Compile Include="Assets\Scripts\TextScripts\TextBoxManager.cs" />
      <Compile Include="Assets\Scripts\Universalscripts\platformScript.cs" />
      <Compile Include="Assets\Scripts\Universalscripts\stayOnPlatform.cs" />
+<<<<<<< HEAD
      <None Include="Assets\text.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+=======
+     <Compile Include="Assets\Scripts\enemyDamage.cs" />
+     <Compile Include="Assets\Scripts\mainCharacterHealth.cs" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\PlatformTutorial.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\LeftrightTutorial.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\EnemyTutorial.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\End of tutorial.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\text.txt" />
+     <None Include="Assets\Scripts\TextScripts\Tutorial Text\Jumptutorial.txt" />
+     <None Include="Assets\text.txt" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>/Users/charlsonso/Programs/unity/unity2dgame/schoolGame/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+>>>>>>> master
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
