@@ -6,7 +6,11 @@ TagManager:
   tags:
   - Enemy
   - Ground
+<<<<<<< HEAD
   - HeightCheck
+=======
+  - Pickup
+>>>>>>> a9dd1706d2ca1b241a23805481c86b46ed32d2a4
   layers:
   - Default
   - TransparentFX
