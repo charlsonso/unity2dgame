@@ -10,7 +10,7 @@ public class monster_spawner : MonoBehaviour {
     public GameObject projectile; 
     // Use this for initialization
     void Start () {
-        InvokeRepeating("LaunchProjectile", 2.0f, 2.5f);
+        InvokeRepeating("LaunchProjectile", .5f, 1f);
         player = GameObject.Find(target);
        // charRigidBody = GetComponent<Rigidbody2D>();
     }

@@ -5,8 +5,8 @@ using UnityEngine;
 public class stayOnPlatform : MonoBehaviour
 {
     public GameObject platform;
-    float movementSpeedX;
-    float movementSpeedY;
+    float movementSpeedX = 1;
+    float movementSpeedY = 0;
     bool onPlatform;
     Transform transplat;
 

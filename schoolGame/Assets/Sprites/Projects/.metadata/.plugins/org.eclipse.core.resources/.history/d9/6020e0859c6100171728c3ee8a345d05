@@ -1,0 +1,36 @@
+import java.util.Arrays;
+
+public class ConcatenatingIntegers {
+
+	public static void main(String[] args) {
+		combineIntegers("5 56 50");
+	}
+	
+	public static void combineIntegers(String str) {
+		String values[] = str.split(" ");
+		Arrays.sort(values);
+		String newSting;
+		System.out.print("Largest output: ");
+		for(int i = values.length-1; i >= 0; --i) {
+			System.out.print(values[i]);
+		}
+		
+		System.out.print("\nSmallest output: ");
+
+		for(int i = 0; i < values.length; ++i) {
+			for(int j = 0; j < values.length; j++){
+				if(Integer.parseInt(values[i]) + Integer.parseInt(values[j]) < Integer.parseInt(values[j]) + Integer.parseInt(values[i])){
+					newSting = values[i];
+				} else {
+					newSting = values[j];
+				}
+				System.out.print(newSting);
+
+			}
+
+		}
+
+		
+	}
+
+}

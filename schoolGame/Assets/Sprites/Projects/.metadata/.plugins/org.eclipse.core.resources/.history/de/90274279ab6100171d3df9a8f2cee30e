@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Spiral_Acension {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		int value = 0;
+		System.out.println("Enter a number to start the spiral: ");
+		value = keyboard.nextInt();
+		boolean flip = false;
+		boolean endTime = false;
+		int start = 1;
+		while(endTime == false){
+			if(start == Math.pow(value,2)+1){
+				endTime = true;
+			}
+			else if(flip == false){
+				printFromLeftToRight(start, start+5);
+				start += value;
+				flip = !flip;
+			}
+			else if (flip == true) {
+				printRightToLeft(start, start+5);
+				start += value;
+
+				flip = !flip;
+			}
+		
+		}
+	}
+
+	public static void printFromLeftToRight(int start, int end) {
+		for(int i = start; start < end; start++){
+			System.out.print(start + " ");
+		}
+		System.out.println();
+
+	}
+	public static void printRightToLeft(int start, int end) {
+		for(int i = end; end >= start; end--){
+			System.out.print(end + " ");
+		}
+		System.out.println();
+
+		
+	}
+}

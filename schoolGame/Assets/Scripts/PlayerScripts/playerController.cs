@@ -18,7 +18,8 @@ public class playerController : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float jumpHeight;
-
+    //health varibles
+    int health;
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
@@ -69,4 +70,12 @@ public class playerController : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
+//Take damage function
+public void Damage(int dmg)
+{
+    health -= dmg;
+
+    //playerAnimation when you take damage
+    //gameObject.GetComponent<>().Play("Player_Damage_Animation");
+}
 }

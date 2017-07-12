@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1795302094131012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.6, y: -6.76, z: -10}
+  m_LocalPosition: {x: -25.111574, y: 11.238185, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4732139617697038}
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1141627698590772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41, y: 0.01, z: 10}
+  m_LocalPosition: {x: 0.40999985, y: 0.010000229, z: 10}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 4178649321529224}
@@ -90,7 +90,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHP: 5
-  deathEffect: {fileID: 1743594302473768, guid: 5fdfa5b3ee2a5564ebf75525a9373510,
+  deathEffect: {fileID: 1920287589434816, guid: 4249a8efccf6977429e080e2025dd2b7,
     type: 2}
   pointsOnDeath: 0
 --- !u!114 &114425993473503612

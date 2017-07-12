@@ -10,7 +10,7 @@ public class cameraFollower : MonoBehaviour {
 	//difference between the character and camera
 	Vector3 offset;
 	//lowest point our camera can go
-	float lowY;
+	public float lowY;
 
 	// Use this for initialization
 	void Start () {
@@ -26,13 +26,13 @@ public class cameraFollower : MonoBehaviour {
 		Vector3 targetCamPos = target.position + offset;
 		//lerp lets us switch from one position to the next
 		//lerp will slow down based off smoothing
-		//Time.deltaTime is the difference between the last frame
+		//Time.dzeltaTime is the difference between the last frame
 		//ctrl+' for help on functions
 		transform.position = Vector3.Lerp(transform.position,targetCamPos, smoothing*Time.deltaTime);
 
 		//don't follow if character is falling out map
-		if(transform.position.y<lowY) 
-			transform.position = new Vector3 (transform.position.x, lowY, transform.position.z);
+		//if(transform.position.y<lowY) 
+	//		transform.position = new Vector3 (transform.position.x, lowY, transform.position.z);
 	}
 
 

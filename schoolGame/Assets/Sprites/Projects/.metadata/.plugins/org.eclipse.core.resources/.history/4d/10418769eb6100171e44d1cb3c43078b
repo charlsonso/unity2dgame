@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class NumberSnake {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		int value = 0;
+		System.out.println("Enter a number to snake : ");
+		value = keyboard.nextInt();
+		boolean flip = false;
+		boolean endTime = false;
+		int start = 0;
+		while(endTime == false){
+			if(start == Math.pow(value,2)){
+				endTime = true;
+			}
+			else if(flip == false){
+				printFromLeftToRight(start, start + value);
+				start += value;
+				flip = !flip;
+			}
+			else if (flip == true) {
+				printRightToLeft(start, start + value);
+				start += value;
+
+				flip = !flip;
+			}
+		
+		}
+	}
+
+	public static void printFromLeftToRight(int start, int end) {
+		start++;
+		for(int i = start; start <= end; start++){
+			if(Integer.toString(start).length() == 1){
+				System.out.print(start + "  ");
+			} else
+			System.out.print(start + " ");
+		}
+		System.out.println();
+
+	}
+	public static void printRightToLeft(int start, int end) {
+		start++;
+		for(int i = end; end >= start; end--){
+			if(Integer.toString(end).length() == 1){
+				System.out.print(end + "  ");
+
+			} else
+			System.out.print(end + " ");
+		}
+		System.out.println();
+
+		
+	}
+}

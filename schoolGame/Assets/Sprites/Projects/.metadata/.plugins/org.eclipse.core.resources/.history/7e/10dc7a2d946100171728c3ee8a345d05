@@ -1,0 +1,19 @@
+import java.util.Collections;
+
+public class ConcatenatingIntegers {
+
+	public static void main(String[] args) {
+
+	}
+	
+	public void combineIntegers(String str) {
+		List values[] = str.split(" ");
+		
+		Collections.sort(values);
+		for(int i = 0; i < values.length; ++i) {
+			
+		}
+		
+	}
+
+}
