@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4735605753675512}
   - component: {fileID: 212262009989635842}
+  - component: {fileID: 61480633492493292}
   m_Layer: 0
   m_Name: MultipleBrokenFloor
   m_TagString: Untagged
@@ -244,7 +245,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1128108826423810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.05, y: -6.58, z: 0}
+  m_LocalPosition: {x: -30.937317, y: -0.6031549, z: 0}
   m_LocalScale: {x: 1.8945978, y: 2.5098724, z: 1}
   m_Children:
   - {fileID: 4542612260427008}
@@ -303,6 +304,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.67}
+  m_EdgeRadius: 0
+--- !u!61 &61480633492493292
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128108826423810}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.1, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.73, y: 0.44}
   m_EdgeRadius: 0
 --- !u!61 &61596069526449352
 BoxCollider2D:
