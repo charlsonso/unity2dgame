@@ -23,7 +23,7 @@ public class FlashingText : MonoBehaviour
            // yield return new WaitForSeconds(.75f);
            // currentText.text = "continue. . .";
             yield return new WaitForSeconds(.75f);
-            currentText.text = "continue. . .";
+            currentText.text = "enter. . .";
 
             yield return new WaitForSeconds(.75f);
             currentText.text = null;
